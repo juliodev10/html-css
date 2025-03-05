@@ -3,22 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo Fixo de tela</title>
     <style>
         body{
             height: 100vh;
-            background-color: black;
+            /*background-color: black;
             background-image: url(wallpaper002.jpg);
             background-position: center center;
             background-repeat: no-repeat;
             /*background-size: contain;*/
             /*background-size: 100% 100%;*/
+            /*background-size: cover;
+            background-attachment: fixed;
+            Shorthand - background
+                color>image>position>repeat>[size]>attachment
+            */
+            background: black url(wallpaper002.jpg)
+            center center no-repeat fixed;
             background-size: cover;
         }
 
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -30,6 +37,8 @@
     <main>
         <h1>Teste imagem de fundo</h1>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, numquam necessitatibus placeat consequuntur hic, debitis laudantium laboriosam eaque temporibus pariatur reiciendis architecto? Reprehenderit suscipit in tempore dicta deleniti inventore Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, corrupti, quos veniam incidunt corporis ipsam, vitae itaque saepe ipsa officia illum natus consequatur exercitationem. Consectetur totam esse voluptas placeat aliquid?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint repellat asperiores sit ipsum? Quisquam harum odit culpa dolore neque, nam quam earum modi ipsam voluptas atque officiis itaque provident doloribus!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, numquam necessitatibus placeat consequuntur hic, debitis laudantium laboriosam eaque temporibus pariatur reiciendis architecto? Reprehenderit suscipit in tempore dicta deleniti inventore Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, corrupti, quos veniam incidunt corporis ipsam, vitae itaque saepe ipsa officia illum natus consequatur exercitationem. Consectetur totam esse voluptas placeat aliquid?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint repellat asperiores sit ipsum? Quisquam harum odit culpa dolore neque, nam quam earum modi ipsam voluptas atque officiis itaque provident doloribus!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, numquam necessitatibus placeat consequuntur hic, debitis laudantium laboriosam eaque temporibus pariatur reiciendis architecto? Reprehenderit suscipit in tempore dicta deleniti inventore Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, corrupti, quos veniam incidunt corporis ipsam, vitae itaque saepe ipsa officia illum natus consequatur exercitationem. Consectetur totam esse voluptas placeat aliquid?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint repellat asperiores sit ipsum? Quisquam harum odit culpa dolore neque, nam quam earum modi ipsam voluptas atque officiis itaque provident doloribus!
         </p>
     </main>
 </body>
