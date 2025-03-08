@@ -13,11 +13,11 @@
         }*/
         table{
             width: 400px;
+            height: 400px;
             border-collapse: collapse;
-            border: 5px solid red;
         }
 
-        tr{
+        /*tr{
             background-color: gray;
         }
 
@@ -25,10 +25,19 @@
             background-color: rgb(147, 10, 10);
 
         }
-
+        */
         td{
             border: 1px solid black;
             padding: 8px;
+            text-align: center;
+            /*text-align: left;/*alinhamento horizontal*/
+            vertical-align: top; /*alinhamento vertical*/
+            /*vertical-align: middle;*/
+            /*vertical-align: bottom;*/
+        }
+
+        .numero{
+            text-align: right;
         }
 
         td.dado{
@@ -52,14 +61,16 @@
             <td>B1</td>
             <td>C1</td>
         </tr>
-        <tr class="linha">
+        <!--<tr class="linha">-->
+        <tr>
             <td>A2</td>
             <td>B2</td>
             <td>C2</td>
         </tr>
         <tr>
             <td>A3</td>
-            <td class="dado">B3</td>
+            <!--<td class="dado">B3</td>-->
+            <td class="numero">B3</td>
             <td>C3</td>
         </tr>
     </table>
