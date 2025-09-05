@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.wrapper {
+  height: 100vh;
+  background-color: white;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 28% 28% 28% auto;
+  grid-template-rows: 15% 20% auto 5%;
+  grid-gap: 5px;
+}
+
+header {
+  grid-column: 1 / 5;
+  display: grid;
+  background-color: rgb(75, 0, 75);
+  color: white;
+}
+
+header div {
+  justify-self: end;
+  width: 80px;
+  height: 60px;
+  margin: auto 10px;
+  padding: 10px;
+  background-color: rgb(155, 20, 15);
+}
+
+section {
+  grid-column: 1 / 4;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
+
+section div {
+  padding: 10px;
+  color: white;
+}
+
+section :nth-child(1) {
+  background-color: rgb(38, 24, 38);
+}
+
+section :nth-child(2) {
+  background-color: rgb(2, 2, 2);
+}
+
+section :nth-child(3) {
+  background-color: rgb(38, 24, 38);
+}
+
+aside {
+  grid-column: 4 / 5;/*começa na 4 e termina na 5*/
+  grid-row: 2/4;
+  background-color: rgb(35, 72, 44);
+  color: white;
+  padding: 20px;
+}
+
+article {
+  grid-column: 1 / 4;
+  grid-row: 3 / 4;
+  background-color: rgb(125, 125, 44);
+  padding: 10px;
+  align-content: center;
+}
+
+footer {
+  grid-column: 1 / 5;
+  grid-row: 4 / 5;
+  background-color: green;
+  padding: 10px;
+}
